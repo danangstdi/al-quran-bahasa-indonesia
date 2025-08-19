@@ -21,14 +21,14 @@ export default async function HomeMain() {
               <h2 className=' font-semibold'>
                 {surah.namaLatin}
               </h2>
-              <div className="flex items-center gap-1 text-xs text-gray-500">
+              <div className="flex items-center gap-1 text-[0.7rem] text-gray-500">
                 <Stack size={11}/>
                 <Dot size={14}/>  
-                <p className='font-semibold'>{surah.jumlahAyat} Ayat</p>
+                <p className='font-semibold'>{`${surah.arti} (${surah.jumlahAyat})`}</p>
               </div>
             </div>
             <div className='ml-auto'>
-              <p className='text-sm text-gray-600'>{surah.nama}</p>
+              <p className='text-gray-600'>{surah.nama}</p>
             </div>
           </div>
         </Link> 

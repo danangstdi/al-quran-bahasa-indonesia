@@ -1,15 +1,15 @@
-// import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="id">
       {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-amber-100/40`}> */}
-      <body className='bg-amber-100/40'>
+      <body className='bg-white'>
         <NextTopLoader color="oklch(66.6% 0.179 58.318)" height={5} crawl={true} showAtBottom={false}/>
         {children}
       </body>
